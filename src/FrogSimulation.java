@@ -8,8 +8,8 @@ public class FrogSimulation {
     }
 
     private int hopDistance() {
-        int dist = 0;
-        dist = (int) (Math.random() * 10) + dist;
+        int dist;
+        dist = (int) (Math.random() * 20-5);
         return dist;
     }
 
@@ -22,9 +22,8 @@ public class FrogSimulation {
             } else if (position < 0) {
                 return false;
             }
-            return false;
         }
-        return simulate();
+            return false;
     }
 
     public double runSimulations(int num) {
